@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Helvetica';
+    height:100vh;
+    background-color: lightgreen;
+    /* display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));    
+    grid-template-rows: auto;
+    column-gap: .25rem;
+    row-gap: .25rem; */
+}
+
+@font-face {
+    font-family: 'Mango Grotesque';
+    src:    url('./fonts/MangoGrotesque-SemiBold.woff') format('woff'),
+            url('./fonts/MangoGrotesque-SemiBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sort {
+    float: left;
+    width: 40%;
+    padding: 1rem;
+    background: lightgreen;
+    color:black;
+    height: 100%;
+    overflow: scroll;
+    transition: ease-in-out 1s;
+}
+
+.rating {
+    background-color: lightgreen;
+    font-family: 'Helvetica';
+    padding: .5rem;
+}
+
+.objects {
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+    height: 100%;
+    overflow: scroll;
+    padding: .25rem;
+}
+
+.objects {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, minmax(0, 1fr));    
+    grid-template-rows: auto;
+    column-gap: .25rem;
+    row-gap: .25rem;
+}
+
+.header {
+    font-family: 'Mango Grotesque';
+    font-size: 15rem;
+    letter-spacing: -.2rem;
+    line-height: 11rem;
+    padding: .25rem;
+}
+
+
+.box{
+    float:left;
+    background-color: none;
+    color: #fff;
+    width: 125px;
+    line-height: 125px;
+    text-align: center;
+    margin: 1rem;
+    display: none;
+    align-items: center;
+
+}
+
+.show{
+    display: block;
+}
+
+.btn{
+    font-family: 'Helvetica';
+    font-size: 1rem;
+    border: solid black 1px;
+    /* outline:none; */
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:#ddd;
+}
+
+
+.sticker1 {
+    font-family: 'Mango Grotesque';
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 10px 20px 8px 20px;
+    cursor: move;
+    z-index: 10;
+  }
+
+.sticker1 {
+    border-radius: 50%;
+    rotate: -7deg;
+    border: 2px solid darkblue; /*#f7db26*/
+    background-color: lightskyblue;
+    color: darkblue;
+    transition: transform 1s ease-in-out;
+}
+
+.sticker1:hover{
+        transform: rotate(360deg); 
+}
+
+.sticker2 {
+    font-family: 'Mango Grotesque';
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 10px 20px 8px 20px;
+    cursor: move;
+    z-index: 10;
+  }
+
+.sticker2 {
+    rotate: -25deg;
+    border: 2px solid #f7db26; /*#f7db26*/
+    background-color: darkorange;
+    color: #f7db26;
+    transition: transform 1s ease-in-out;
+}
+
+.sticker2:hover{
+        transform: rotate(360deg); 
+}
+
+.sticker3 {
+    font-family: 'Mango Grotesque';
+    position: absolute;
+    top: 10%;
+    left: 84%;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 10px 20px 8px 20px;
+    cursor: move;
+    z-index: 10;
+  }
+
+.sticker3 {
+    border-radius: 50%;
+    rotate: 7deg;
+    border: 2px solid darkgreen; /*#f7db26*/
+    background-color: lightgreen;
+    color: darkgreen;
+    transition: transform 1s ease-in-out;
+
+}
+
+.sticker3:hover{
+        transform: rotate(360deg); 
+}
+
+.sticker4 {
+    font-family: 'Mango Grotesque';
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 10px 20px 8px 20px;
+    cursor: move;
+    z-index: 10;
+  }
+
+.sticker4 {
+    rotate: 10deg;
+    border: 2px solid red; /*#f7db26*/
+    background-color: darksalmon;
+    color: red;
+    transition: transform 1s ease-in-out;
+}
+
+.sticker4:hover{
+        transform: rotate(360deg); 
+}
+
+.sticker5 {
+    font-family: 'Mango Grotesque';
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 10px 20px 8px 20px;
+    cursor: move;
+    z-index: 10;
+  }
+
+.sticker5 {
+    rotate: 20deg;
+    border: 2px solid mediumvioletred; /*#f7db26*/
+    background-color: hotpink;
+    color: mediumvioletred;
+    transition: transform 1s ease-in-out;
+}
+
+.sticker5:hover{
+        transform: rotate(360deg); 
+}
+
+.sticker6 {
+    font-family: 'Mango Grotesque';
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 10px 20px 8px 20px;
+    cursor: move;
+    z-index: 10;
+  }
+
+.sticker6 {
+    border-radius: 50%;
+    rotate: 15deg;
+    border: 2px solid darkorchid; /*#f7db26*/
+    background-color: plum;
+    color: darkorchid;
+    transition: transform 1s ease-in-out;
+
+}
+
+.sticker6:hover{
+        transform: rotate(360deg); 
+}
+
+
+img {
+    display: flex;
+    max-width: 150px;
+    height: auto;
+    object-fit: scale-down;
+  }
+
+img {
+    transition: transform .5s ease-in-out;
+  }
+
+img:hover {
+    transform: scale(1.1);
+  }
+
+.link img {
+    transition: transform 1s ease-in-out;
+  }
+
+.link img:hover {
+    transform: rotate(360deg);
+  }
