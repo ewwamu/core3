@@ -1,36 +1,58 @@
-function setup() {
-    this.addEventListener("mousemove", resetTimer, false);
-    this.addEventListener("mousedown", resetTimer, false);
-    this.addEventListener("keypress", resetTimer, false);
-    this.addEventListener("DOMMouseScroll", resetTimer, false);
-    this.addEventListener("mousewheel", resetTimer, false);
-    this.addEventListener("touchmove", resetTimer, false);
-    this.addEventListener("MSPointerMove", resetTimer, false);
- 
-    startTimer();
-}
-setup();
+let idleTimer = null;
+let idleState = false;
 
-function startTimer() {
-    // wait 2 seconds before calling goInactive
-    timeoutID = window.setTimeout(goInactive, 2000);
+function showFoo(time) {
+  clearTimeout(idleTimer);
+  if (idleState == true) {
+    $("#foo").removeClass("inactive");
+  }
+  idleState = false;
+  idleTimer = setTimeout(function() {
+    $("#foo").addClass("inactive");
+    idleState = true;
+  }, time);
 }
+
+showFoo(2000);
+
+$(window).mousemove(function(){
+    showFoo(2000);
+});
+
+// function setup() {
+//     this.addEventListener("mousemove", resetTimer, false);
+//     this.addEventListener("mousedown", resetTimer, false);
+//     this.addEventListener("keypress", resetTimer, false);
+//     this.addEventListener("DOMMouseScroll", resetTimer, false);
+//     this.addEventListener("mousewheel", resetTimer, false);
+//     this.addEventListener("touchmove", resetTimer, false);
+//     this.addEventListener("MSPointerMove", resetTimer, false);
  
-function resetTimer(e) {
-    window.clearTimeout(timeoutID);
+//     startTimer();
+// }
+// setup();
+
+// function startTimer() {
+//     // wait 2 seconds before calling goInactive
+//     timeoutID = window.setTimeout(goInactive, 2000);
+// }
  
-    goActive();
-}
+// function resetTimer(e) {
+//     window.clearTimeout(timeoutID);
  
-function goInactive() {
-    // do something
-}
+//     goActive();
+// }
  
-function goActive() {
-    // do something
+// function goInactive() {
+//     // do something
+// }
+ 
+// function goActive() {
+//     // do something
          
-    startTimer();
-}
+//     startTimer();
+// }
+
 ///////////////
 
 

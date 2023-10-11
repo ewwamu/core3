@@ -170,3 +170,11 @@ b:hover:after{
 .btn:hover{
     background-color:#ddd;
 }
+
+#foo {
+    transition: opacity 0.6s ease-out;
+  }
+  
+  .inactive {
+    opacity: 0;
+  }
