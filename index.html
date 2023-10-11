@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/stickers/sticker1.js"></script>
+<script defer src="assets/stickers/sticker2.js"></script>
+<script defer src="assets/stickers/sticker3.js"></script>
+<script defer src="assets/stickers/sticker4.js"></script>
+<script defer src="assets/stickers/sticker5.js"></script>
+<script defer src="assets/stickers/sticker6.js"></script>
+<title>filter tutorial</title>
+</head>
+
+
+
+<body>
+    <div class="banner">
+        <marquee 
+        class="rating" 
+        behavior=scroll 
+        scrollamount="8" 
+        hspace="100%">
+            <span>
+                USE THE STICKERS TO RATE OUR CHAIRS ON A SCALE FROM <b>COMFY</b> TO <b>YEOWCH!</b>
+                USE THE STICKERS TO RATE OUR CHAIRS ON A SCALE FROM <b>COMFY</b> TO <b>YEOWCH!</b>
+            </span>
+            <!-- <span>
+                USE THE STICKERS TO RATE OUR CHAIRS ON A SCALE FROM <b>COMFY</b> TO <b>YEOWCH!</b>
+            </span> -->
+        </marquee>
+    </div>
+    <div class="sort">
+        <div class="header">
+            <p>
+                <!-- CHAIRS THAT AREN'T CHAIRS -->
+                PLEASE WAIT TO BE SEATED
+            </p>
+        </div>
+        <div id="buttons">
+            <button class="btn" onclick="filterObjects('all')">Show All</button>
+            <button class="btn" onclick="filterObjects('hydrants')">HYDRANTS</button>
+            <button class="btn" onclick="filterObjects('sp')">STANDPIPES</button>
+            <button class="btn" onclick="filterObjects('vc')">VINTAGE COLLECTION</button>
+            <button class="btn" onclick="filterObjects('stoop')">STOOP</button>
+            <button class="btn" onclick="filterObjects('tg')">TREEGUARDS</button>
+        </div>
+    </div>
+    <div class="objects">
+        <div class="box hydrants">
+            <!-- <img src=""/> -->
+            <img src="assets/img/h1.png"/>
+        </div>
+        <div class="box hydrants">
+            <img src="assets/img/h2.png"/>
+        </div>
+        <div class="box hydrants">
+            <img src="assets/img/h4.png"/>
+        </div>
+        <div class="box hydrants">
+            <img src="assets/img/h5.png"/>
+        </div>
+        <div class="box hydrants">
+            <img src="assets/img/h6.png"/>
+        </div>
+        <div class="box hydrants">
+            <a class="link" href="./hydrant/index.html">
+                <img src="assets/img/h7.png"/>
+            </a>
+        </div>
+        <div class="box sp">
+            <img src="assets/img/sp1.png"/>
+        </div>
+        <div class="box sp">
+            <img src="assets/img/sp2.png"/>
+        </div>
+        <div class="box sp">
+            <a class="link" href="./standpipe/index.html">
+                <img src="assets/img/sp3.png"/>
+            </a>
+        </div>
+        <div class="box vc">
+            <img src="assets/img/vc.jpg"/>
+        </div>
+        <div class="box vc">
+            <img src="assets/img/vc2.jpg"/>
+        </div>
+        <div class="box vc">
+            <img src="assets/img/vc3.jpg"/>
+        </div>
+        <div class="box vc stoop">
+            <img src="assets/img/vc4.jpg"/>
+        </div>
+        <div class="box vc">
+            <img src="assets/img/vc5.jpg"/>
+        </div>
+        <div class="box stoop">
+            <img src="assets/img/stoop.jpg"/>
+        </div>
+        <div class="box stoop">
+            <img src="assets/img/stoop2.jpg"/>
+        </div>
+        <div class="box tg">
+            <img src="assets/img/treeguard.jpg"/>
+        </div>
+        <div class="box tg">
+            <img src="assets/img/treeguard2.jpg"/>
+        </div>
+        <div class="box tg">
+            <img src="assets/img/treeguard3.jpg"/>
+        </div>
+    </div>
+    <div class="stickers">
+        <div class="sticker1">
+            <div class="stickerheader">COMFY</div>
+        </div>
+        <div class="sticker2">
+            <div class="stickerheader">YEOWCH!</div>
+        </div>
+        <div class="sticker3">
+            <div class="stickerheader">NOT BAD</div>
+        </div>
+        <div class="sticker4">
+            <div class="stickerheader">YEOWCH!</div>
+        </div>
+        <div class="sticker5">
+            <div class="stickerheader">NOT BAD</div>
+        </div>
+        <div class="sticker6">
+            <div class="stickerheader">COMFY</div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+
+</html>
