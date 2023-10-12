@@ -1,23 +1,57 @@
-let idleTimer = null;
-let idleState = false;
 
-function showFoo(time) {
-  clearTimeout(idleTimer);
-  if (idleState == true) {
-    $("#foo").removeClass("inactive");
-  }
-  idleState = false;
-  idleTimer = setTimeout(function() {
-    $("#foo").addClass("inactive");
-    idleState = true;
-  }, time);
-}
 
-showFoo(2000);
+// function greet() {
+//     console.log('Hello world');
+// }
 
-$(window).mousemove(function(){
-    showFoo(2000);
-});
+// setTimeout(greet, 3000);
+// console.log('This message is shown first');
+
+///////////////
+
+// let inactivityTime = function() {
+//     let time;
+//     window.onload = resetTimer;
+//     document.onmousemove = resetTimer;
+//     document.onkeypress = resetTimer;
+//     function showElement() {
+//       alert("You are now logged out.")
+//     }
+//     function resetTimer() {
+//       clearTimeout(time);
+//       time = setTimeout(showElement, 2000)
+//     }
+//   };
+// (window).mousemove(function(){
+//     showElement(2000);
+// });
+
+///////////////
+
+
+// let idleTimer = null;
+// let idleState = false;
+
+// function showElement(time) {
+//   clearTimeout(idleTimer);
+//   if (idleState == true) {
+//     $("#foo").removeClass("inactive");
+//   }
+//   idleState = false;
+//   idleTimer = setTimeout(function() {
+//     $("#foo").addClass("inactive");
+//     idleState = true;
+//   }, time);
+// }
+
+// showElement(1000);
+
+// (window).mousemove(function(){
+//     showElement(2000);
+// });
+
+///////////////
+
 
 // function setup() {
 //     this.addEventListener("mousemove", resetTimer, false);

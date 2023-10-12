@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: default;
 }
 
 body{
@@ -86,10 +87,9 @@ b:hover:after{
   transform: translate(-50%, -50%);
 }
 
-.header-img {
-    position: relative;
-    padding: 0rem 1rem 0rem 0rem;
-    top: 30%;
+.gallery {
+    position: absolute;
+    top: 20%;
     left: 75%;
     z-index: 4;
     /* grid-column-start: 3;
@@ -99,8 +99,8 @@ b:hover:after{
 }
 
 
-.header-img img{
-    max-width: 100px;
+.gallery img{
+    max-width: 10rem;
     height: auto;
     object-fit: scale-down;
     rotate: 25deg;
@@ -171,10 +171,10 @@ b:hover:after{
     background-color:#ddd;
 }
 
-#foo {
+/* #foo {
     transition: opacity 0.6s ease-out;
   }
   
   .inactive {
     opacity: 0;
-  }
+  } */
