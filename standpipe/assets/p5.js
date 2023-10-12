@@ -2,14 +2,13 @@ let imgs = []
 let img;
 
 function preload() {
-  let img1 = loadImage('assets/img/h1.png');
-  let img2 = loadImage('assets/img/h2.png');
-  let img3 = loadImage('assets/img/h3.png');
-  let img4 = loadImage('assets/img/h4.png');
-  let img5 = loadImage('assets/img/h5.png');
-  let img6 = loadImage('assets/img/h6.png');
+  let img1 = loadImage('assets/img/sp1.png');
+  let img2 = loadImage('assets/img/sp2.png');
+  let img3 = loadImage('assets/img/sp3.png');
+  let img4 = loadImage('assets/img/sp5.png');
+  let img5 = loadImage('assets/img/sp6.png');
 
-imgs = [img1,img2,img3,img4,img5,img6];
+imgs = [img1,img2,img3,img4,img5];
 }
 
 //let img;
