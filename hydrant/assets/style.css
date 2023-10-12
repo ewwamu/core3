@@ -70,7 +70,7 @@ marquee {
     height: 100%;
     background: none/*#f1f1f1*/;
     overflow: scroll;
-    padding: 0rem;
+    padding: 1rem;
 }
 /* 
 .article {
@@ -173,12 +173,25 @@ b:hover:after{
 }
 
 #five:hover{
-    border: 2px solid mediumvioletred; /*#f7db26*/
+    border: 1px solid mediumvioletred; /*#f7db26*/
     background-color: hotpink;
     color: mediumvioletred;
     transition: transform 1s ease-in-out;
     font-weight: bold;
+}
 
+#back {
+    margin: 1.25rem;
+    position:absolute;
+    top: 81%;
+    left: auto;
+}
+
+#back:hover {
+    border: 1px solid darkorchid; /*#f7db26*/
+    background-color: plum;
+    color: darkorchid;
+    transition: transform 1s ease-in-out;
 }
 /* .btn:hover{
     background-color:#ddd;
